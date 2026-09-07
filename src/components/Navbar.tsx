@@ -22,7 +22,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 nav-blur transition-all duration-300 ${
-        scrolled ? "border-b border-[rgba(144,154,159,0.18)]" : "border-b border-transparent"
+        scrolled
+          ? "border-b border-[rgba(144,154,159,0.18)]"
+          : "border-b border-transparent"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
@@ -51,7 +53,7 @@ export default function Navbar() {
         {/* CTA + Hamburger */}
         <div className="flex items-center gap-4">
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download
             className="hidden md:inline-flex btn-primary text-sm cursor-pointer"
           >
@@ -65,7 +67,9 @@ export default function Navbar() {
             <span
               className="hamburger-line"
               style={{
-                transform: menuOpen ? "translateY(6.5px) rotate(45deg)" : "none",
+                transform: menuOpen
+                  ? "translateY(6.5px) rotate(45deg)"
+                  : "none",
               }}
             />
             <span
@@ -75,7 +79,9 @@ export default function Navbar() {
             <span
               className="hamburger-line"
               style={{
-                transform: menuOpen ? "translateY(-6.5px) rotate(-45deg)" : "none",
+                transform: menuOpen
+                  ? "translateY(-6.5px) rotate(-45deg)"
+                  : "none",
               }}
             />
           </button>
@@ -100,7 +106,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download
             className="btn-primary text-center mt-2 cursor-pointer"
           >
