@@ -6,7 +6,7 @@ export default function Footer() {
     >
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
         <span className="font-display text-sm font-medium text-[#555]">
-          © 2026 Jandell Dadis. All rights reserved.
+          Built by Jandell Dadis · 2026
         </span>
         <span className="font-mono text-xs text-[#333]">
           Built with React &amp; TypeScript
